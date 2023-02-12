@@ -15623,7 +15623,8 @@ function resoudreAttaque(attaquant, cibles, attackLabel, weaponName, weaponStats
           } else if (!options.interposer) {
             let triche = options.triche || options.interventionDivine ||
               weaponStats.attaquePaire || weaponStats.attaqueImpaire;
-            if (triche && (playerIsGM(playerId))) {              
+            if (triche && (playerIsGM(playerId))) {
+              log((playerIsGM(playerId)))
               switch (triche) {
                 case "rate":
                   if (d20roll >= target.crit) {
